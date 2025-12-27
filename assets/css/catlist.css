@@ -138,9 +138,13 @@ width: 80px;
 .insta-btn {
   margin: 50px auto 20px auto;
 }
+.insta-btn p {
+  font-size: 14px;
+  margin: 20px 20px 0 0;
+}
   .cats-link {
     width: 300px;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 16px;
   }
