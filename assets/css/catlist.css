@@ -1,0 +1,150 @@
+@charset "utf-8";
+:root {
+  --swiper-theme-color: #fff !important;
+}
+section {
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  margin: 130px 50px 50px 50px;
+  padding: 40px;
+}
+.prf-img {
+  width: 400px;
+  display: block;
+  margin: 8px auto 30px auto;
+}
+
+.tbl {
+  margin: 0 auto 60px auto;
+  width: 500px;
+  border-collapse: separate;
+}
+
+.tbl thead th {
+  border-radius: 20px 20px 0 0;
+  padding: 16px;
+  font-size: 18px;
+  background-color: #2b6e55;
+  color: #fff;
+}
+
+.tbl tbody th,
+td {
+  padding: 10px 20px;
+  background-color: #F0FFF0;
+}
+
+.tbl tbody tr:last-child th {
+  border-bottom-left-radius: 20px;
+}
+
+.tbl tbody tr:last-child td {
+  border-bottom-right-radius: 20px;
+}
+
+.tooltip {
+  display: block;
+  margin: 50px auto;
+  color: #4b4b4b;
+  font-size: 14px;
+  max-width: 350px;
+  text-align: center;
+}
+
+.insta-btn {
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  background: #833ab4;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border: solid 3px #fff;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.insta-btn p {
+  height: 60px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin: 15px 15px 0 0;
+}
+
+#insta-logo {
+  width: 50px;
+  padding: 5px;
+  margin: 0 10px 0 15px;
+}
+.insta-btn:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.swiper {
+  width: 100%;
+  max-width: 500px;
+  /* height: 450px; */
+    aspect-ratio: 4 / 3;
+  margin-bottom: 50px;
+}
+.swiper-slide img {
+  width: 500px;
+}
+.cats-link {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 10px;
+}
+.cats-link img {
+width: 80px;
+  margin: auto;
+}
+.cats-link img:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+@media (width < 768px) {
+  .prf-img {
+    width: 280px;
+    margin: 8px auto 30px auto;
+  }
+  section {
+    margin: 80px 10px 30px 10px;
+    padding: 20px 10px 10px 10px;
+  }
+  .tbl {
+    width: 300px;
+  }
+  .swiper {
+    width: 280px;
+    margin:auto;
+  }
+  .swiper img {
+    width: 280px;
+  }
+ .swiper-slide {
+  aspect-ratio: 4 / 3; 
+  overflow: hidden;
+}
+.insta-btn {
+  margin: 50px auto 20px auto;
+}
+  .cats-link {
+    width: 300px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .cats-link img {
+width: 55px;
+}
+}

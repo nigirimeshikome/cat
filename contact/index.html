@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせフォーム | 四つ葉ねこ</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="../index.html"><img src="../assets/images/header-logo.svg" alt="保護猫団体 四つ葉ねこ"></a></h1>
+        </div>
+        <button class="nav-button" type="button"></button>
+    </header>
+    <div class="wrap">
+        <aside class="nav-pc">
+            <nav>
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="../about/index.html">四つ葉ねこについて</a></li>
+                    <li class="nav-item"><a href="../event/index.html">次回譲渡会</a></li>
+                    <li class="nav-item"><a href="../adoption/index.html">里親をご希望の方へ</a></li>
+                    <li class="nav-item"><a href="../catlist/index.html">里親募集中ねこ</a></li>
+                    <li class="nav-item"><a href="../volunteer/index.html">ボランティア募集</a></li>
+                    <li class="nav-item"><a href="#">お問い合わせ</a></li>
+                    <li><a href=""><img src="../assets/images/Instagram_Glyph_Gradient.svg" alt=""></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <nav class="nav-sp">
+            <ul class="nav-items">
+                <li class="nav-item"><a href="about/index.html">四つ葉ねこについて</a></li>
+                <li class="nav-item"><a href="event/index.html">次回譲渡会</a></li>
+                <li class="nav-item"><a href="adoption/index.html">里親をご希望の方へ</a></li>
+                <li class="nav-item"><a href="catlist/index.html">里親募集中ねこ</a></li>
+                <li class="nav-item"><a href="volunteer/index.html">ボランティア募集</a></li>
+                <li class="nav-item"><a href="contact/index.html">お問い合わせ</a></li>
+                <li><a href=""><img src="assets/images/Instagram_Glyph_Gradient.svg" alt=""></a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="title-wrap">
+                <h1 class="title">お問い合わせ</h1>
+            </div>
+            <section id="contact">
+                <h2>お問い合わせフォーム</h2>
+                <form action=""><!-- method属性付けましょう -->
+                    <p><label for="">お問い合わせ種別</label></p>
+                    <select name="" id="">
+                        <option value="">譲渡会参加申し込み</option>
+                        <option value="">預かりボランティア応募</option>
+                        <option value="">その他お問い合わせ</option>
+                    </select>
+                    <p><label for="">お名前（漢字）</label></p>
+                    <input type="text" name="" placeholder="姓" required>
+                    <input type="text" name="" placeholder="名" required>
+                    <p><label for="">お名前（フリガナ）</label></p>
+                    <input type="text" name="" placeholder="セイ" required>
+                    <input type="text" name="" placeholder="メイ" required>
+                    <p><label for="">メールアドレス</label></p>
+                    <input type="email" name="email" required class="width">
+                    <p><label for="">電話番号</label></p>
+                    <input type="tel" name="tel" required class="width">
+                    <p><label for="">メッセージ</label></p>
+                    <textarea name="message" required></textarea>
+                    <p><input type="submit" value="送信する" id="submit-btn"></p>
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <small>
+            <p>四つ葉ねこ All Rights Reserved</p>
+        </small>
+    </footer>
+</body>

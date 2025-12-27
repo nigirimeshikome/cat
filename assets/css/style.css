@@ -1,0 +1,553 @@
+@charset "utf-8";
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #eaffe9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1280' height='560' preserveAspectRatio='none' viewBox='0 0 1280 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1136%26quot%3b)' fill='none'%3e%3cpath d='M548.56 554.59 a128.16 128.16 0 1 0 256.32 0 a128.16 128.16 0 1 0 -256.32 0z' fill='rgba(134%2c 199%2c 146%2c 0.11)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M803.63 177.25 a121.21 121.21 0 1 0 242.42 0 a121.21 121.21 0 1 0 -242.42 0z' fill='rgba(134%2c 199%2c 146%2c 0.11)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M259.24 460.63 a134 134 0 1 0 268 0 a134 134 0 1 0 -268 0z' fill='rgba(134%2c 199%2c 146%2c 0.11)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-93.76 419.01 a123.48 123.48 0 1 0 246.96 0 a123.48 123.48 0 1 0 -246.96 0z' fill='rgba(134%2c 199%2c 146%2c 0.11)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M287.94 274.91 a109.84 109.84 0 1 0 219.68 0 a109.84 109.84 0 1 0 -219.68 0z' fill='rgba(134%2c 199%2c 146%2c 0.11)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-89.38 439.57 a106.43 106.43 0 1 0 212.86 0 a106.43 106.43 0 1 0 -212.86 0z' fill='rgba(134%2c 199%2c 146%2c 0.11)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M407.73 74.31 a135.75 135.75 0 1 0 271.5 0 a135.75 135.75 0 1 0 -271.5 0z' fill='rgba(134%2c 199%2c 146%2c 0.11)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M376.84 413.51 a153.22 153.22 0 1 0 306.44 0 a153.22 153.22 0 1 0 -306.44 0z' fill='rgba(134%2c 199%2c 146%2c 0.11)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M931.49 539.06 a117.18 117.18 0 1 0 234.36 0 a117.18 117.18 0 1 0 -234.36 0z' fill='rgba(134%2c 199%2c 146%2c 0.11)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M908.18 117.81 a116.35 116.35 0 1 0 232.7 0 a116.35 116.35 0 1 0 -232.7 0z' fill='rgba(134%2c 199%2c 146%2c 0.11)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M918.88 520.98 a169.37 169.37 0 1 0 338.74 0 a169.37 169.37 0 1 0 -338.74 0z' fill='rgba(134%2c 199%2c 146%2c 0.11)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1127.44 405.88 a134.91 134.91 0 1 0 269.82 0 a134.91 134.91 0 1 0 -269.82 0z' fill='rgba(134%2c 199%2c 146%2c 0.11)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1136'%3e%3crect width='1280' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  font-family: "Zen Maru Gothic", sans-serif;
+  line-height: 1.6em;
+  letter-spacing: 0.05em;
+  color: #4b4b4b;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #FFF;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(234, 255, 233, 1) 100%);
+}
+
+.logo {
+  text-align: center;
+  width: 100%;
+}
+
+.logo a {
+  display: inline-block;
+}
+
+.logo img {
+  width: 200px;
+  display: block;
+}
+
+/* .logo img {
+  width: 200px;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+} */
+
+.nav-pc {
+  position: fixed;
+  top: 130px;
+  left: 100px;
+  width: 160px;
+  z-index: 900;
+  box-sizing: border-box;
+}
+
+.nav-sp {
+  display: none;
+}
+
+/* nav {
+  width: 160px;
+  box-sizing: border-box;
+} */
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 20px;
+}
+
+nav ul li {
+  font-size: 14px;
+  color: #2b6e55;
+  font-weight: bold;
+  padding: 5px 10px;
+  line-height: 2.2em;
+  box-sizing: border-box;
+}
+
+nav ul li img {
+  width: 30px;
+}
+
+nav ul li:hover {
+  background-color: #39bd88;
+  color: #fff;
+  border-radius: 30px;
+  transition: 0.1s;
+}
+
+.nav-button {
+  display: none;
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  position: relative;
+  background-image: url(../images/menu-icon-01.svg);
+  background-repeat: no-repeat;
+  background-size: 55px auto;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+
+
+main {
+  flex: 1;
+  max-width: 710px;
+  margin: 0 auto;
+}
+
+#mv-box {
+  position: relative;
+}
+
+#main-catch {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  top: 60%;
+  left: 65%;
+  line-height: 1.8em;
+  letter-spacing: 0.08em;
+}
+
+#mv {
+  width: 710px;
+  margin: 130px auto 100px auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+/* ------------------------------------------ */
+/*ｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰｰ clover -------------------*/
+/* ------------------------------------------ */
+
+/* .clover {
+  width: 430px;
+  text-align: center;
+} */
+.clover {
+  box-sizing: border-box;
+  padding: 70px 0px;
+  width: 450px;
+  margin: 0 auto 120px auto;
+  text-align: center;
+}
+
+/* .inner {
+  padding: 65px;
+} */
+/* 今回神近さんがやってくれたコーディングだと、clover（外）にwidthを決めて、innerで中の体重を増やして・・・と言う状態で、widthを持たせるところがバラバラになり、大きさの制御が難しくなってしまいました。
+こういったときには、widthもpaddingもしっかり外側（clover）で取ってあげて、大きさをまず確保すること。（必要であれば、heightもしっかり指定することもあります。今回はやらずにいけたので、やりませんでした。）paddingを使ったことにより、内側に向かって抑えてあげることでcloverのみのwidthはしっかり確保され、背景画像の表示領域の調整がしやすいです。もちろんpaddingを使ったときにはbox-sizing:border-box;も忘れずにしましょう！ */
+
+.clover-left {
+  background-image: url(../images/clover-green.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.clover-right {
+  background-image: url(../images/clover-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.clover-left h2 {
+  color: #eaffe9;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.clover-left p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: medium;
+  margin-bottom: 30px;
+}
+
+.clover-right h3 {
+  margin-bottom: 10px;
+}
+
+.clover-right p {
+  font-size: 14px;
+  font-weight: medium;
+  margin-bottom: 20px;
+}
+
+.btn-white {
+  width: 232px;
+  height: 50px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  line-height: 1.57;
+  letter-spacing: 0.05em;
+  color: #2b6e55;
+  background-color: #fff;
+  border: solid 2px #2b6e55;
+  border-radius: 22.5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-green {
+  width: 232px;
+  height: 50px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  line-height: 1.57;
+  letter-spacing: 0.05em;
+  color: #2b6e55;
+  background-color: #eaffe9;
+  border: solid 2px #2b6e55;
+  border-radius: 22.5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-white:hover,
+.btn-green:hover {
+  width: 232px;
+  height: 50px;
+  color: #fff;
+  background-color: #2b6e55;
+  border: solid 2px #2b6e55;
+  border-radius: 22.5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.img-wrap {
+  display: block;
+}
+
+.img-wrap img {
+  width: 420px;
+  margin: 0 auto;
+}
+
+.prf {
+  width: 215px;
+}
+
+.heading {
+  color: #2b6e55;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.content h2 {
+  margin-top: 30px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 0 10px 150px 10px;
+}
+
+.box-text {
+  margin: 10px auto 20px auto;
+}
+
+.list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 60px;
+  justify-content: center;
+
+}
+
+#list p {
+  text-align: center;
+}
+
+.list li:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+footer {
+  color: #fff;
+  background-color: #2b6e55;
+  height: 70px;
+  margin-top: 20px;
+}
+
+footer p {
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+
+@media (width < 960px) {
+  body {
+    line-height: 1.4em;
+    letter-spacing: 0.02em;
+  }
+
+  aside {
+    left: 30px;
+    width: 120px;
+    z-index: 900;
+    box-sizing: border-box;
+  }
+
+  #main-catch {
+    font-size: 13px;
+    top: 50%;
+    left: 55%;
+  }
+
+  #mv {
+    width: 80%;
+  }
+
+  .wrap {
+    width: 60%;
+  }
+}
+
+@media (width < 768px) {
+  #main-catch {
+    font-size: 12px;
+    top: 60%;
+    left: 51%;
+  }
+
+  #mv {
+    margin: 80px auto;
+    width: 300px;
+  }
+
+  .nav-pc {
+    display: none;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+    background: #FFF;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(234, 255, 233, 1) 100%);
+  }
+
+
+  .logo img {
+    height: 50px;
+  }
+
+  .nav-sp {
+    display: block;
+  }
+
+  .nav-button {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border: none;
+    z-index: 9999;
+    /* 重なり順を上にしておきましょう！ */
+  }
+
+  .nav-sp .nav-items {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #fff;
+    width: 80vw;
+    padding: 80px 24px 24px;
+    z-index: 900;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+
+    a {
+      min-height: 48px;
+    }
+  }
+
+  .nav-sp .nav-items.nav-items--open {
+    /* display: flex; */
+    /*  animation-name: slide;
+    animation-timing-function: ease-in-out; */
+    transform: translateX(0);
+    /* animation: slide 0.3s ease-in-out forwards; */
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(80vw);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .wrap {
+    width: 360px;
+  }
+
+  .clover {
+    padding: 50px 40px;
+    width: 300px;
+    margin: 0 auto 120px auto;
+    text-align: center;
+  }
+
+  .clover-left,
+  .clover-right {
+    transform: none;
+    /* margin-left: 18px;
+    margin-right: 18px; */
+    margin-bottom: 80px;
+  }
+
+  .clover-left h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .clover-left p,
+  .clover-right p {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  .clover-right h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .btn-white,
+  .btn-green {
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .box-text {
+    font-size: 14px;
+  }
+
+  .img-wrap {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .img-wrap img {
+    width: 100%;
+  }
+
+  .name {
+    margin: 0 auto 10px auto;
+  }
+
+  .list {
+    gap: 20px;
+  }
+
+  .content {
+    margin-bottom: 100px;
+  }
+
+  .prf {
+    width: 50%;
+  }
+}
+
+/* ふわっとさせたい時は、下のやつ書きます */
+/* jsはわけ分からんこと書いてると思いますが、あいつらは、動かしたいオブジェクトにクラス名とかつけてるに過ぎません。 */
+/* 動き自体はcssが全てやっています。下のcssの意味は、元々、objectってクラス名つけたとこが、①透明で見えない（要素は存在する）②ちょい下にズレてる位置にいる③0.8m秒かけてふわっと動作するっていう三つの命令がかかってます。 */
+/* それをjsでこの位置に来たら、showってクラス名もつけてやってね！という命令になっているので、 */
+.object {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+/* objectとshowっていうクラス名を二つとも持ったら、透明無し！！（見えるようになる。）＆位置は元々の位置 */
+.object.show {
+  opacity: 1;
+  transform: translateY(0);
+}

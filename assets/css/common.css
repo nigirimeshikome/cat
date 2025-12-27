@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+.title-wrap {
+  background-image: url(../../assets/images/title-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 100px 50px 0 50px;
+}
+
+.title {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+h2 {
+  color: #2b6e55;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 10px dotted #eaffe9;
+  padding-bottom: 20px;
+}
+
+.text {
+  font-size: 16px;
+}
+
+section {
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  margin: 50px;
+  padding: 40px;
+}
+
+table {
+  margin: 0 auto 20px auto;
+  font-weight: bold;
+}
+
+table tr th::after {
+  content: "🍀";
+}
+
+iframe {
+  margin-top: 20px;
+}
+
+.btn-green {
+  margin-top: 20px;
+}
+
+.text-left {
+  text-align: left;
+  padding: 30px;
+}
+
+dl dt {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+dl dd {
+  margin-bottom: 40px;
+}
+
+ul li {
+  line-height: 2.2em;
+}
+
+.mainimg {
+  width: 400px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+#event-cats {
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+  gap: 10px;
+}
+
+#event-cats img {
+  width: 100px;
+  margin: auto;
+}
+
+#event-cats img:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+#contact {
+  background-color: #fff;
+  /*  margin: 50px auto; */
+  padding: 40px;
+  margin: 50px;
+  border-radius: 15px;
+}
+
+#contact h2 {
+  color: #2B6E55;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+  border-bottom: 10px dotted #EAFFE9;
+  padding-bottom: 20px;
+}
+
+form {
+  margin: 20px auto;
+  padding: 0 100px;
+  text-align: center;
+}
+
+form p {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.width {
+  width: 338px;
+}
+
+input {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+}
+
+#submit-btn {
+  width: 232px;
+  height: 50px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  line-height: 1.57;
+  letter-spacing: 0.05em;
+  color: #2B6E55;
+  background-color: #EAFFE9;
+  border: solid 2px #2B6E55;
+  border-radius: 22.5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 40px auto 20px auto;
+}
+
+#submit-btn:hover {
+  color: #fff;
+  background-color: #2B6E55;
+  border: solid 2px #2B6E55;
+  border-radius: 22.5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+
+
+
+@media (width < 768px) {
+  .mainimg {
+    width: 100% !important;
+    margin-top: 0;
+  }
+
+  .title-wrap {
+    margin: 70px 8px 0 8px;
+  }
+
+  .title {
+    padding: 50px 0;
+  }
+
+  .text {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .text-left {
+    padding: 10px;
+    font-size: 12px;
+  }
+tr th,tr td{
+  font-size: 14px;
+}
+table {
+  margin-bottom: 10px;
+}
+  #event-cats {
+    flex-wrap: wrap;
+    margin: 10px 0 0 0;
+  }
+
+  #event-cats img {
+    width: 60px;
+  }
+
+  iframe {
+    width: 90%;
+    height: 90%;
+  }
+
+  section {
+    margin: 30px 10px;
+    padding: 20px 10px 10px 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  dl dt {
+    font-size: 14px;
+  }
+
+  dl dd {
+    margin-bottom: 30px;
+  }
+
+  form {
+    padding: 0;
+  }
+}
