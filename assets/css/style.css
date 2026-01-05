@@ -190,8 +190,7 @@ main {
 /* .inner {
   padding: 65px;
 } */
-/* 今回神近さんがやってくれたコーディングだと、clover（外）にwidthを決めて、innerで中の体重を増やして・・・と言う状態で、widthを持たせるところがバラバラになり、大きさの制御が難しくなってしまいました。
-こういったときには、widthもpaddingもしっかり外側（clover）で取ってあげて、大きさをまず確保すること。（必要であれば、heightもしっかり指定することもあります。今回はやらずにいけたので、やりませんでした。）paddingを使ったことにより、内側に向かって抑えてあげることでcloverのみのwidthはしっかり確保され、背景画像の表示領域の調整がしやすいです。もちろんpaddingを使ったときにはbox-sizing:border-box;も忘れずにしましょう！ */
+
 
 .clover-left {
   background-image: url(../images/clover-green.svg);
@@ -420,7 +419,7 @@ footer p {
     right: 10px;
     border: none;
     z-index: 9999;
-    /* 重なり順を上にしておきましょう！ */
+   
   }
 
   .nav-sp .nav-items {
@@ -536,17 +535,13 @@ footer p {
   }
 }
 
-/* ふわっとさせたい時は、下のやつ書きます */
-/* jsはわけ分からんこと書いてると思いますが、あいつらは、動かしたいオブジェクトにクラス名とかつけてるに過ぎません。 */
-/* 動き自体はcssが全てやっています。下のcssの意味は、元々、objectってクラス名つけたとこが、①透明で見えない（要素は存在する）②ちょい下にズレてる位置にいる③0.8m秒かけてふわっと動作するっていう三つの命令がかかってます。 */
-/* それをjsでこの位置に来たら、showってクラス名もつけてやってね！という命令になっているので、 */
 .object {
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.8s ease-out;
 }
 
-/* objectとshowっていうクラス名を二つとも持ったら、透明無し！！（見えるようになる。）＆位置は元々の位置 */
+
 .object.show {
   opacity: 1;
   transform: translateY(0);
